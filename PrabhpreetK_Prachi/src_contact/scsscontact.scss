@@ -1,0 +1,32 @@
+$button-bg-color: rgb(82, 208, 227);
+
+body {
+    border: 4px dashed black; 
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  button {
+    background-color: $button-bg-color;
+    position: relative;
+    text-transform: uppercase;
+    padding: 10px;
+    border: none;
+    height: 40px;
+    border-radius: 5px;
+    &::after {
+        content: attr(name);
+        text-transform: uppercase;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        pointer-events: none;
+    }
+    
+}

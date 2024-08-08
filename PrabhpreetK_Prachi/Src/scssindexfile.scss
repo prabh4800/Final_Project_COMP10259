@@ -1,0 +1,14 @@
+.menu-item,a {
+    color: yellow; // Change text color to yellow
+    background-color:darkslategrey;
+    &:hover {
+      color: white; // Change hover text color to white
+    }
+  }
+  #btn {
+    background-color: red;
+    font-size: 20px; 
+    width: 150px;
+    height: 35px;
+    border-radius: 5px;
+  }
